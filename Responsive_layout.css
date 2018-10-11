@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+
+aside, section {
+  margin-right: 1.096%;
+}
+
+.container {
+  width: 95vw;
+  height: 50.13vh;
+  padding: 1.096%;
+  background-color: gray;
+}
+
+aside {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  background-color: blue;
+}
+
+section {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  background-color: yellow;
+}
+
+@media (max-width: 420px) {
+
+  /* Demonstrational Styles */
+
+  aside, section {
+    height: 48%;
+    margin-bottom: 1.096%;
+  }
+
+  /* Layout Styles */
+  aside, section {
+    float: none;
+    width: auto;
+  }
+}

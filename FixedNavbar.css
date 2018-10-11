@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: black;
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  font-family: Courier, sans-serif;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+}
+
+nav a.active {
+  border: 1px solid white;
+  border-radius: 9999px;
+}
+
+.active:hover {
+  background-color: white;
+  color: black;
+  transition: background-color .15s ease-in-out;
+}
+
+nav a:hover {
+  color: gray;
+  transition: color .15s ease-in-out;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+  text-align: justify;
+}
+
+/* ==== DESKTOP LAYOUT ==== */
+
+@media (min-width: 768px) {
+  nav a {
+    float: right;
+
+  }
+  .home {
+    float: left;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
+
+  nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  body {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+}
